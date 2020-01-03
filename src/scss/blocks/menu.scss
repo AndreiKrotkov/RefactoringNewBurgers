@@ -1,0 +1,16 @@
+.menu {
+  background: url("../images/img/bg-menu.png") 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.menu--title {
+  position: absolute;
+  top: 15.5%;
+  left: 8.5%;
+  color: $white;
+  line-height: 0.9;
+  font-family: "Gagalin-Regular";
+  font-size: rem(72px);
+  font-weight: normal;
+}

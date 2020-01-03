@@ -1,0 +1,9 @@
+.container-foot {
+  max-width: rem(950px);
+  display: flex;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
+}

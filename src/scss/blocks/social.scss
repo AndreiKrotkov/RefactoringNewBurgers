@@ -1,0 +1,39 @@
+.social{
+    width: 50%;
+    padding: rem(15px);
+
+    @include phones{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: rem(12px) rem(15px) rem(10px) rem(15px);
+    }
+    
+}
+.social__icons-vk:hover{
+    color: black;
+}
+.social__icons{
+    width: rem(30px);
+    height: rem(20px);
+    object-fit: contain;
+    fill: #5A5A5A;
+
+    &:hover{
+        fill: $white;
+    }
+}
+
+.social__list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social__item{
+    margin: 0 rem(20px) 0 0;
+    &:last-child{
+        margin: 0;
+    }
+}

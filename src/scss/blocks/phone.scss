@@ -1,0 +1,9 @@
+.phone__link {
+  font-size: rem(14px);
+  font-family: "Ubuntu-bold";
+  color: $orange;
+
+  &:hover {
+    color: darken($color: $orange, $amount: 10%);
+  }
+}

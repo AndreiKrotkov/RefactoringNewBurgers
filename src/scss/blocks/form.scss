@@ -1,0 +1,159 @@
+.form__block-title {
+  color: white;
+  font-family: "Ubuntu-Light";
+  font-size: rem(14px);
+}
+.error{
+  color: red;
+}
+.form__wrap {
+  display: flex;
+  justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.form__one-section {
+  width: 52%;
+  margin-right: rem(20px);
+
+  @include tablets {
+    width: 67%;
+    margin-right: 0;
+  }
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-top: rem(20px);
+}
+.form__radio {
+  position: relative;
+  margin-bottom: 0;
+}
+.form__label--radio {
+  margin-left: rem(26px);
+}
+
+.form__input {
+  background: #fff;
+  border-radius: rem(5px);
+  border: rem(2px) solid #fff;
+  padding: rem(8px) rem(21px);
+  width: 100%;
+  font-family: "ubuntu-light";
+  font-size: rem(14px);
+  color: #2f3234;
+}
+.form__block-title {
+  color: #fff;
+  font-size: rem(14px);
+  font-family: "ubuntu-light";
+  margin-bottom: rem(7px);
+}
+.form__block {
+  flex: 1;
+  margin-right: rem(20px);
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+.form__two-section {
+  width: 48%;
+
+  @include tablets {
+    width: 67%;
+  }
+
+  @include phones {
+    width: 100%;
+  }
+}
+.form__input--textarea {
+  resize: none;
+  height: rem(110px);
+}
+.form__falseradio {
+  height: rem(15px);
+  width: rem(15px);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  background: #ffffff;
+  display: block;
+}
+
+.form__falseradio::before {
+  content: "";
+  height: rem(7px);
+  width: rem(7px);
+  background-color: #e45028;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto;
+  visibility: hidden;
+}
+.form__trueradio:checked ~ .form__falseradio:before {
+  visibility: visible;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.form__falseradio--checkbox {
+  border-radius: 0%;
+  height: rem(16px);
+  width: rem(16px);
+}
+
+.btn--delivery {
+  margin: 0;
+}
+.btn__clear {
+  font-family: "Ubuntu-Light";
+  font-weight: 500;
+  padding: rem(10px);
+  border-radius: rem(5px);
+  color: #ffffff;
+  font-size: rem(14px);
+}
+.form__wrapp-btn {
+  @include tablets {
+  }
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.form__money {
+  @include phones {
+    width: 100%;
+    padding: 0 rem(47px);
+  }
+}
+
+.form__not-call {
+  @include phones {
+  }
+}
+
+.form__btn-wrapp {
+  @include phones {
+  }
+}

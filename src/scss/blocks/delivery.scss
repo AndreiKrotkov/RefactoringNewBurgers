@@ -1,0 +1,19 @@
+.delivery{
+    background-image: url("../images/img/bg-delivery.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container--delivery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.delivery__title{
+    margin: 0 0 rem(30px) 0;
+
+    @include phones{
+        margin: 0;
+    }
+}

@@ -1,0 +1,36 @@
+.btn-description {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0 rem(10px) 0;
+  position: absolute;
+  z-index: 5;
+  top: -4.4375rem;
+  left: 0;
+  width: rem(90px);
+  height: rem(90px);
+  background-color: $orange;
+  border-radius: rem(5px);
+  background-image: url("../images/icon/burger.svg");
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  font-family: "Gagalin-Regular";
+  color: $white;
+  font-size: rem(14px);
+  transition: all 0.7s;
+  opacity: 0.6;
+
+  &:hover {
+    background-color: red;
+    opacity: 1;
+  }
+
+  @include tablets {
+    width: 4.625rem;
+    height: 5.625rem;
+    left: -3.5rem;
+    bottom: auto;
+    top: -5.5rem;
+    padding: 0 0 rem(5px) 0;
+  }
+}

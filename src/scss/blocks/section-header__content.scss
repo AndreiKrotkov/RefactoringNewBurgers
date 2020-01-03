@@ -1,0 +1,12 @@
+.section-header__content {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: rem(940px);
+  min-height: 50.3125rem;
+  margin: 0 auto;
+
+  @include phones {
+    min-height: 62.8125rem;
+  }
+}

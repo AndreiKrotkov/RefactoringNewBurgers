@@ -1,0 +1,17 @@
+.section-contacts {
+  width: 50%;
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.section-contacts__phone {
+  display: flex;
+  padding: 0 0 0 rem(10px);
+}
+.phone__img {
+  margin: 0 rem(10px) 0 0;
+}

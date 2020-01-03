@@ -1,0 +1,108 @@
+.best {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/img/bg-best.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.best__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.best__title {
+  margin-bottom: rem(48px);
+
+  @include phones {
+    margin-bottom: rem(28px);
+  }
+}
+.title--gray {
+  letter-spacing: rem(3px);
+
+  @include phones {
+    font-size: rem(50px);
+  }
+}
+.best__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 rem(58px) 0;
+
+  @include phones {
+    flex-direction: column;
+    
+  }
+}
+.best__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 33.33%;
+  margin: 0 rem(35px) 0 0;
+  list-style: none;
+  text-align: center;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include tablets {
+  }
+
+  @include phones {
+    width: 95%;
+    flex-direction: row;
+    margin: 0 0 rem(35px) 0;
+  }
+}
+.best__item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include phones {
+    width: 70%;
+    text-align: left;
+  }
+}
+.best__img {
+  margin-bottom: rem(25px);
+}
+
+.best__icon {
+  width: rem(97px);
+  height: rem(89px);
+  margin-bottom: rem(25px);
+
+  @include phones {
+    width: 25%;
+  }
+}
+.best__subtitle {
+  font-family: "lifehackmedium";
+  font-size: rem(24px);
+  color: rgb(47, 50, 52);
+  line-height: 1.167;
+  text-align: center;
+  margin-bottom: rem(25px);
+
+  @include tablets {
+    text-align: center;
+  }
+
+  @include phones {
+    width: 100%;
+    text-align: left;
+    margin-bottom: rem(15px);
+  }
+}
+.best__text {
+  color: #6e6f6f;
+  font-family: "Ubuntu-Light";
+  line-height: 1.3;
+}

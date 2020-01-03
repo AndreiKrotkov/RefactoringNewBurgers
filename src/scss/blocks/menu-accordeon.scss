@@ -1,0 +1,156 @@
+.menu-accordeon {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  @include phones {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+
+.menu-accordeon__item {
+  position: relative;
+  display: flex;
+  z-index: 10;
+
+  &.active {
+    @include phones {
+      z-index: 20;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .menu-accordeon__trigger {
+      &:nth-child(2) {
+        display: block;
+
+        .menu-accordeon__trigger-text {
+          color: #fff;
+        }
+      }
+    }
+    .menu-accordeon__subtitle {
+      color: $yellow;
+    }
+
+    .menu-accordeon__text {
+      position: initial;
+      transform: translate(0);
+      opacity: 1;
+    }
+
+    .menu-accordeon__close {
+      @include phones {
+        display: block;
+      }
+    }
+
+    .menu-accordeon__content {
+      max-width: rem(540px);
+      width: 100%;
+      flex: 1;
+    }
+
+    @include tablets {
+      .menu-accordeon__content {
+        max-width: rem(530px);
+      }
+    }
+  }
+}
+.menu-accordeon__trigger {
+  width: rem(80px);
+  background-size: cover;
+  position: relative;
+
+  &:nth-child(2) {
+    display: none;
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+
+    @include phones {
+      right: 130px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(20, 20, 20, 0.7);
+  }
+
+  &--meat {
+    background-image: url("../images/img/menu-meat.jpg");
+    background-position: center;
+  }
+
+  &--vegans {
+    background-image: url("../images/img/menu-vegan.jpg");
+    background-position: center;
+  }
+
+  &--diet {
+    background-image: url("../images/img/menu-diet.jpg");
+    background-position: center;
+  }
+
+  @include tablets {
+    min-width: 60px;
+  }
+
+  @include phones {
+    min-width: 50px;
+  }
+}
+
+.menu-accordeon__subtitle {
+  font-size: rem(40px);
+  color: #fff;
+  font-family: "Gagalin-Regular";
+  font-weight: normal;
+  white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  bottom: -3%;
+}
+
+.menu-accordeon__content {
+  background: rgba(#2f3234, 0.93);
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 0.6s;
+}
+
+.menu-accordeon__text {
+  position: absolute;
+  font-family: "Ubuntu-Light";
+  line-height: 1.76em;
+  font-size: rem(14px);
+  color: #fff;
+  padding: rem(55px) rem(34px);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s cubic-bezier(0.645, 0.045, 0.355, 1),
+  transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  @include phones {
+    padding: rem(75px) rem(15px);
+  }
+}

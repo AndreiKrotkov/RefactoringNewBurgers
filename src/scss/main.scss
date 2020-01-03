@@ -1,0 +1,10 @@
+$black: #000000;
+$orange: #e45028;
+$yellow: #f9b43b;
+$gray: #2f3234;
+$white: #ffffff;
+
+
+@import "./mixin";
+@import "./fonts";
+@import "./blocks/*.scss";

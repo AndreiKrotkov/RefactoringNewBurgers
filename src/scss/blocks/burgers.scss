@@ -1,0 +1,187 @@
+.burgers {
+  background-image: -moz-linear-gradient(
+    90deg,
+    rgb(249, 180, 59) 0%,
+    rgb(235, 140, 56) 48%,
+    rgb(249, 180, 59) 74%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgb(249, 180, 59) 0%,
+    rgb(235, 140, 56) 48%,
+    rgb(249, 180, 59) 74%
+  );
+  background-image: -ms-linear-gradient(
+    90deg,
+    rgb(249, 180, 59) 0%,
+    rgb(235, 140, 56) 48%,
+    rgb(249, 180, 59) 74%
+  );
+
+  padding: 4%;
+}
+
+.burgers{
+  background-image: url('../images/img/burger-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.burgers__container {
+  padding: rem(20px) rem(20px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+    padding: rem(10px) rem(10px);
+  }
+}
+.burgers__content {
+  width: 50%;
+  margin: 0 0 0 rem(20px);
+
+  @include tablets {
+    width: 80%;
+    text-align: center;
+  }
+}
+.burgers__title {
+  margin: 0 0 rem(40px) 0;
+  line-height: 0.9;
+  text-align: center;
+}
+.burger__item {
+  &:hover {
+    .burger__subsection-list {
+      opacity: 1;
+      transform: scaleY(1);
+
+      @include tablets {
+        height: min-content;
+      }
+    }
+  }
+}
+// .burgers__title {
+  
+// }
+
+.burgers__text {
+  font-family: "Ubuntu-Light";
+  font-size: rem(14px);
+  color: $white;
+  margin: 0 0 rem(15px) 0;
+  line-height: 1.5;
+}
+.burgers__prise {
+  color: $orange;
+  margin: 0 rem(25px) 0 0;
+}
+.burgers__prise-span {
+  font-size: rem(30px);
+  color: $orange;
+}
+.burgers__wrapp-prise {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+.burgers__btn {
+  margin: 27px 0 0 0;
+}
+
+.burger__subsection-list {
+  width: rem(270px);
+  border-radius: rem(5px);
+  padding: rem(20px) rem(20px);
+  position: absolute;
+  z-index: 10;
+  top: -4.4375rem;
+  left: rem(90px);
+  background-image: url("../images/img/burger__subsection-list.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: all 0.3s;
+
+  @include tablets {
+    top: -5.4875rem;
+    left: 1.1875rem;
+  }
+
+  @include phones {
+    top: -5.4875rem;
+    left: 1.1875rem;
+  }
+}
+
+.burger__subsection-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(15px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.br-subsection__item-img {
+  width: rem(68px);
+  height: rem(40px);
+
+  margin: 0 rem(25px) 0 0;
+}
+.br-subsection__item-wrapp {
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
+}
+.br-subsection__item-name {
+  font-family: "Ubuntu-Medium";
+  color: #333333;
+}
+.br-subsection__item-weight {
+  font-family: "Ubuntu-Light";
+  color: #333333;
+}
+.beef {
+  background-image: url("../images/icon/beef.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rolls {
+  background-image: url("../images/icon/buns.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.green {
+  background-image: url("../images/icon/salad.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sauce {
+  background-image: url("../images/icon/sauce.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.produce {
+  background-image: url("../images/icon/cucumber.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cheese {
+  background-image: url("../images/icon/cheese.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

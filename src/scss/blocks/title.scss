@@ -1,0 +1,42 @@
+.title {
+  font-family: "Gagalin-Regular";
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+.title--center {
+  text-align: center;
+}
+.title--left {
+  text-align: left;
+}
+
+.title--yellow {
+  color: $yellow;
+}
+.title--gray {
+  color: $gray;
+}
+.title--white {
+  color: $white;
+}
+.title--player{
+  @include tablets {
+    font-size: 4.125rem;
+  }
+}
+.title--best{
+  margin-bottom: 10%;
+  
+  @include tablets {
+    margin-bottom: 10%;
+  }
+}
+
+.br-title {
+  text-align: left;
+  font-size: 3.5rem;
+
+  @include tablets {
+    text-align: center;
+  }
+}

@@ -1,0 +1,52 @@
+.burger__kkal-wrapp {
+  position: absolute;
+  bottom: rem(-55px);
+  opacity: 0.6;
+
+  @include tablets {
+    right: -2rem;
+    top: -4.9375rem;
+    left: auto;
+    bottom: auto;
+  }
+
+  @include phones {
+    // top: -17%;
+  }
+}
+.burger__kkal {
+  position: relative;
+  width: rem(75px);
+  height: rem(95px);
+  background-image: url("../images/icon/kkal.svg");
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include tablets {
+    width: 3.6875rem;
+    height: 4.9375rem;
+  }
+}
+.burger__kkal-number,
+.burger__kkal-text {
+  position: absolute;
+  font-family: "Gagalin-Regular";
+  font-size: rem(20px);
+  color: $white;
+}
+.burger__kkal-number {
+  transform: translate(60%, 170%);
+
+  @include tablets {
+    transform: translate(43%, 133%);
+  }
+}
+.burger__kkal-text {
+  left: 20%;
+  bottom: -8%;
+
+  @include tablets {
+    left: 14%;
+  }
+}

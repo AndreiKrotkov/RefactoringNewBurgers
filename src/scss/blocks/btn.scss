@@ -1,0 +1,14 @@
+.btn {
+  font-family: "Ubuntu-Medium";
+  color: $white;
+  font-size: rem(13px);
+  text-transform: uppercase;
+  padding: rem(10px);
+  border-radius: rem(5px);
+  background-color: $orange;
+  transition: all, 0.5s;
+
+  &:hover {
+    background-color: darken($color: red, $amount: 10%);
+  }
+}

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  &.active{
+    overflow: hidden;
+  }
+
+}
+.maincontent{
+  height: 100%;
+  transition: transform 1s;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 12px;
+  }
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 95%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

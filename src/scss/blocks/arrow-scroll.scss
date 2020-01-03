@@ -1,0 +1,18 @@
+.arrow-scroll-wrapp {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+
+  @include tablets {
+    margin-bottom: 2%;
+  }
+}
+.arrow-scroll {
+  width: rem(50px);
+  height: rem(30px);
+  display: none;
+  background-image: url("../images/img/arrow-scroll.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}

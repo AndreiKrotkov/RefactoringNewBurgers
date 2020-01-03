@@ -1,0 +1,12 @@
+.video {
+  background: url("../images/img/video-bg.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+
+}
+.container--video {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
