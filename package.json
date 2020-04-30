@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "fullpage.js": "^3.0.7",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "normalize.css": "^8.0.1"
   }
 }
