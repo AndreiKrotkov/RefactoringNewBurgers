@@ -41,7 +41,7 @@
     "node-sass": "^4.12.0"
   },
   "dependencies": {
-    "fullpage.js": "^3.0.7",
+    "fullpage.js": "^4.0.5",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1"
   }
